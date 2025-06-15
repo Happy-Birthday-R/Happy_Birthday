@@ -1356,7 +1356,8 @@ audio {
 }
 
 
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story, #timeline {
+#play, #bannar_coming, #balloons_flying, #cake_fadein,
+#light_candle, #wish_message, #story, #timeline {
   display: none;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -1380,6 +1381,25 @@ audio {
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   background: linear-gradient(135deg, #ee0979, #ff6a00);
 }
+
+@media (max-width: 768px) {
+  #play, #bannar_coming, #balloons_flying, #cake_fadein,
+  #light_candle, #wish_message, #story, #timeline {
+    font-size: 16px;
+    padding: 10px 22px;
+    margin: 8px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #play, #bannar_coming, #balloons_flying, #cake_fadein,
+  #light_candle, #wish_message, #story, #timeline {
+    font-size: 14px;
+    padding: 8px 18px;
+    margin: 6px auto;
+  }
+}
+
 
 .cake-cover {
 	margin-top: 50px;
