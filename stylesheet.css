@@ -1130,6 +1130,8 @@ audio {
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
+
+/* Balloon text */
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
@@ -1138,6 +1140,30 @@ audio {
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+	.balloons {
+		width: 70px;
+		height: 130px;
+		background-size: 70px 130px;
+	}
+	.balloons h2 {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 480px) {
+	.balloons {
+		width: 60px;
+		height: 110px;
+		background-size: 60px 110px;
+	}
+	.balloons h2 {
+		font-size: 28px;
+	}
+}
+
 #b1,#b11 {
 	background-image: url('b1.png');
 }
@@ -1358,19 +1384,37 @@ audio {
 .cake-cover {
 	margin-top: 50px;
 }
+
+
 .message {
 	margin-top: 200px;
 	display: none;
 }
+
 .message p {
-	font-family: 'Pacifico';
+	font-family: 'Pacifico', cursive;
 	font-size: 36px;
-	text-transform: none; /* Keep natural case for handwritten style */
+	text-transform: none;
 	color: #362424;
 	text-shadow: 2px 2px 2px #FFF;
 	display: none;
 	font-weight: 700;
 }
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+	.message p {
+		font-size: 28px;
+	}
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+	.message p {
+		font-size: 22px;
+	}
+}
+
 
 .btn-primary {
         border-color: #466baf;
@@ -1391,11 +1435,3 @@ audio {
         background-color: #466baf;
     }
 
-
-
-    /*controlling tablet width*/
-    /*@media only screen and (max-width: 720px){
-    	.container {
-    		-webkit-transform: scale(0.9);
-    	}
-    }*/
