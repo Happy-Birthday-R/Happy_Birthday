@@ -1129,6 +1129,7 @@ audio {
 	z-index: 99;
 	width: 100px;
 	height: 183px;
+	margin: 4px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
@@ -1414,7 +1415,8 @@ audio {
 }
 
 .message p {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Pacifico';
+	text-transform: none;
 	font-size: 36px;
 	text-transform: none;
 	color: #362424;
@@ -1476,4 +1478,17 @@ audio {
   padding: 12px 16px;
   text-align: center;
   line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+  .bulb-holder {
+    flex-wrap: wrap; /* Allow wrapping instead of collapsing */
+    gap: 8px;         /* Optional: spacing between bulbs */
+    margin-bottom: 16px;
+  }
+
+  .bulb {
+    width: 30px;      /* Smaller bulb for mobile */
+    height: 30px;
+  }
 }
