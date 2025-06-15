@@ -172,7 +172,7 @@ $('document').ready(function(){
 			 const totalParagraphs = $("#messageLoop p").length;
 			$("p:nth-child("+i+")").fadeOut('slow').delay(900).promise().done(function(){
 			i=i+1;	
-			$("p:nth-child("+i+")").fadeIn('slow').delay(4000);
+			$("p:nth-child("+i+")").fadeIn('slow').delay(3500);
 			if(i==totalParagraphs){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast').delay(700).promise().done(function () {
