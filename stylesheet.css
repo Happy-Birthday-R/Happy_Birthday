@@ -159,9 +159,10 @@ body {
 
 
 .bulb-holder {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    gap: 12px;             
+    margin-bottom: 16px;
 }
 
 .bulb {
@@ -1432,21 +1433,9 @@ audio {
 }
 
 @media (max-width: 480px) {
-  .message {
-    position: absolute;
-    top: 220px; 
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 20;
-  }
-
-  .message p {
-    font-size: 22px;
-    display: block;
-  }
+	.message p {
+		font-size: 22px;
+	}
 }
 
 
