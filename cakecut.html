@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Cake for Rosenee</title>
+  <link rel="stylesheet" href="cake.css" />
+</head>
+<body>
+  <div class="cake-container">
+    <h1>🎂 Happy Birthday Rosenee! 🎂</h1>
+
+    <div class="cake">
+      <div class="frosting"></div>
+
+      <div class="layer top">
+        <div class="cherries">
+          <div class="cherry"></div>
+          <div class="cherry"></div>
+          <div class="cherry"></div>
+        </div>
+        <div class="candles">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+      </div>
+
+      <div class="layer middle"></div>
+      <div class="layer bottom"></div>
+      <div class="plaque">Happy Birthday Rosenee</div>
+      <img src="knife.png" alt="Knife" id="knife" />
+    </div>
+
+    <button id="blowBtn">Blow out the candles 🎈</button>
+
+    <div class="wish hidden" id="wishMessage">
+      <p>May all your dreams glow as bright as this cake once did. 💫<br/>
+      Here's to a year full of love, laughter, and light. 🥳</p>
+    </div>
+
+    <button id="backHomeBtn" class="hidden">Back to Home 💖</button>
+  </div>
+
+  <canvas id="fireworksCanvas" class="hidden"></canvas>
+
+  <audio id="wishMusic" src="happy-birthday.mp3" preload="auto"></audio>
+  <script src="cake.js"></script>
+</body>
+</html>

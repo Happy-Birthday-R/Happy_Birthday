@@ -1,0 +1,83 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#timeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+#description-section {
+  width: 55%;
+}
+
+#description-section h1 {
+  margin-bottom: 20px;
+}
+
+#timeline-description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  min-height: 100px;
+}
+
+#image-section {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#timeline-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#back-button-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+}
+
+#back-button {
+  background-color: #ffb6c1;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#back-button:hover {
+  background-color: #ffc0cb;
+  transform: scale(1.05);
+}

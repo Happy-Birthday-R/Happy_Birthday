@@ -1,0 +1,7 @@
+Would you like me to also add:
+
+    Floating heart animations?
+
+    Background music toggle button?
+
+    Next section like a timeline or photo carousel?
