@@ -42,7 +42,6 @@ body {
   transform: scale(1.05);
 }
 
-/* ✅ Responsive Styling */
 @media (max-width: 768px) {
   .note-container {
     padding: 30px 20px;
