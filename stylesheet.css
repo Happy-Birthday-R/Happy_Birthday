@@ -1129,7 +1129,7 @@ audio {
 	z-index: 99;
 	width: 100px;
 	height: 183px;
-	margin: 4px;
+	margin: 0.5px;
 	background-repeat: no-repeat no-repeat;
 	background-size: 100px 183px;
 }
@@ -1144,7 +1144,6 @@ audio {
 	display: none;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
 	.balloons {
 		width: 70px;
@@ -1432,11 +1431,22 @@ audio {
 	}
 }
 
-/* Mobile adjustments */
 @media (max-width: 480px) {
-	.message p {
-		font-size: 22px;
-	}
+  .message {
+    position: absolute;
+    top: 220px; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .message p {
+    font-size: 22px;
+    display: block;
+  }
 }
 
 
@@ -1482,13 +1492,14 @@ audio {
 
 @media (max-width: 480px) {
   .bulb-holder {
-    flex-wrap: wrap; /* Allow wrapping instead of collapsing */
-    gap: 8px;         /* Optional: spacing between bulbs */
+    flex-direction: column;
+    align-items: center;    
+    gap: 12px;             
     margin-bottom: 16px;
   }
 
   .bulb {
-    width: 30px;      /* Smaller bulb for mobile */
-    height: 30px;
+    width: 40px;  
+    height: 40px;
   }
 }
